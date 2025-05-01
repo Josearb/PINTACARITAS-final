@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %}Contacto | Pintacaritas{% endblock %}
+
+{% block content %}
+<div class="contact-hero">
+    <div class="contact-bubbles">
+        <div class="bubble" style="--size: 120px; --delay: 0s; --color: var(--paint-red);"></div>
+        <div class="bubble" style="--size: 80px; --delay: 2s; --color: var(--paint-yellow);"></div>
+        <div class="bubble" style="--size: 100px; --delay: 4s; --color: var(--paint-blue);"></div>
+    </div>
+    
+    <h1 class="contact-title">
+        <span class="title-word">¡Hablemos</span>
+        <span class="title-word">de tu evento!</span>
+    </h1>
+    
+    <div class="contact-container">
+        <!-- Tarjeta de Email -->
+        <div class="contact-card email-card">
+            <div class="card-icon">
+                <i class="fas fa-envelope-open-text fa-beat-fade"></i>
+                <div class="icon-dots">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3>Correo Electrónico</h3>
+                <p>Respondemos en menos de 24 horas</p>
+                <a href="mailto:adalisblanco7@gmail.com" class="contact-btn">
+                    <span>Envía un Correo</span>
+                    <i class="fas fa-paper-plane fa-fade"></i>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Tarjeta de WhatsApp -->
+        <div class="contact-card whatsapp-card">
+            <div class="card-icon">
+                <i class="fab fa-whatsapp fa-bounce"></i>
+                <div class="icon-rings">
+                    <span></span><span></span>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3>WhatsApp</h3>
+                <p>Respuesta inmediata</p>
+                <a href="https://wa.me/5355336851" target="_blank" class="contact-btn">
+                    <span>Chatear Ahora</span>
+                    <i class="fas fa-comment-dots fa-shake"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

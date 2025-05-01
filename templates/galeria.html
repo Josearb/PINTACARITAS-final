@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}Galería{% endblock %}
+
+{% block content %}
+    <h1 class="page-title">Nuestra Galería</h1>
+    <div class="page-content">
+        <div class="mosaic-gallery">
+            <!-- Ejemplo de elementos de galería -->
+            <div class="mosaic-item">
+                <img src="static/assest/WhatsApp Image 2024-11-02 at 13.13.55.jpeg" alt="Imagen 1">
+                <div class="mosaic-overlay">
+                    <p>Descripción de la imagen 1</p>
+                </div>
+            </div>
+            <div class="mosaic-item">
+                <img src="static/assest/WhatsApp Image 2024-11-02 at 13.13.56.jpeg" alt="Imagen 2">
+                <div class="mosaic-overlay">
+                    <p>Descripción de la imagen 2</p>
+                </div>
+            </div>
+            <div class="mosaic-item">
+                <img src="static/assest/WhatsApp Image 2024-11-02 at 13.13.57 (1).jpeg" alt="Imagen 3">
+                <div class="mosaic-overlay">
+                    <p>Descripción de la imagen 3</p>
+                </div>
+            </div>
+            <div class="mosaic-item">
+                <img src="static/assest/WhatsApp Image 2024-11-02 at 13.13.57 (2).jpeg" alt="Imagen 4">
+                <div class="mosaic-overlay">
+                    <p>Descripción de la imagen 4</p>
+                </div>
+            </div>
+            <div class="mosaic-item">
+                <img src="static/assest/WhatsApp Image 2024-11-02 at 13.13.57.jpeg" alt="Imagen 5">
+                <div class="mosaic-overlay">
+                    <p>Descripción de la imagen 5</p>
+                </div>
+            </div>
+            <div class="mosaic-item">
+                <img src="static/assest/IMG-20250426-WA0006.jpg" alt="Imagen 6">
+                <div class="mosaic-overlay">
+                    <p>Descripción de la imagen 6</p>
+                </div>
+            </div>
+            <div class="mosaic-item">
+                <img src="static/assest/IMG-20250426-WA0007.jpg" alt="Imagen 7">
+                <div class="mosaic-overlay">
+                    <p>Descripción de la imagen 7</p>
+                </div>
+            </div>
+            <div class="mosaic-item">
+                <img src="static/assest/IMG-20250426-WA0008.jpg" alt="Imagen 8">
+                <div class="mosaic-overlay">
+                    <p>Descripción de la imagen 8</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal para imagen expandida -->
+        <div id="imageModal" class="modal">
+            <span class="close-modal">&times;</span>
+            <div class="modal-content">
+                <img id="expandedImage" class="modal-img">
+                <p class="modal-caption"></p>
+                <div class="nav-arrow arrow-left" id="prevImage">&lt;</div>
+                <div class="nav-arrow arrow-right" id="nextImage">&gt;</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

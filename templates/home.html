@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio - Pintacaritas{% endblock %}
+
+{% block content %}
+    <h1 class="page-title">¡Bienvenido a Adis Pintacaritas!</h1>
+    <div class="page-content">
+        <!-- Sección de bienvenida -->
+        <div class="welcome-section">
+            <div class="welcome-content">
+                <p class="welcome-text">Donde el color y la creatividad se encuentran para transformar sonrisas</p>
+                <div class="brush-stroke"></div>
+                <p class="welcome-subtext">Explora nuestro mundo de diseños únicos y experiencias mágicas para tus eventos especiales</p>
+            </div>
+        </div>
+
+        <!-- Tarjetas de servicios -->
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Pintacaritas Profesional</h3>
+                <p>Diseños artísticos para niños con de la mejor calidad</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-birthday-cake"></i>
+                <h3>Eventos Especiales</h3>
+                <p>Llevamos magia a fiestas infantiles, ferias, celebraciones y eventos corporativos</p>
+            </div>
+        </div>
+
+        <!-- Llamado a la acción -->
+        <div class="cta-container">
+            <div class="cta-content">
+                <h2>¿Listo para transformar tu evento?</h2>
+                <p>Contáctanos y lleva la magia del color a tu celebración</p>
+                <a href="{{ url_for('contacto') }}" class="cta-button">Reserva Ahora</a>
+            </div>
+        </div>
+
+        <!-- Galería destacada -->
+        <div class="featured-gallery">
+            <h2>Nuestros Trabajos Destacados</h2>
+            <a href="{{ url_for('galeria') }}" class="see-more">Ver diseños →</a>
+        </div>
+    </div>
+
+    <!-- Enlace a animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <!-- Enlace a nuestro CSS de animaciones -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animations.css') }}">
+    
+    <!-- Enlace a nuestro JavaScript de animaciones -->
+    <script src="{{ url_for('static', filename='js/animations.js') }}" defer></script>
+{% endblock %}

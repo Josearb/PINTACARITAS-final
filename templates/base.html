@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web - {% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar">
+        <a href="{{ url_for('home') }}" class="{% if request.path == '/' %}active{% endif %}">Inicio</a>
+        <a href="{{ url_for('galeria') }}" class="{% if request.path == '/galeria' %}active{% endif %}">Galería</a>
+        <a href="{{ url_for('contacto') }}" class="{% if request.path == '/contacto' %}active{% endif %}">Contacto</a>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="content">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; Adis Pintacarita. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="static/scripts.js"></script>
+</body>
+</html>
